@@ -1,23 +1,24 @@
 @charset "utf-8";
- @import url('https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Exo:200|Source+Sans+Pro:300');
 /* Desktop Styles */
 body {
 	background: #212121;
-	font-family: 'Century Gothic', 'Verdana', 'Arial', 'Open Sans', sans-serif;
+	font-family: 'Century Gothic', 'Exo', 'Source Sans Pro', sans-serif;
 	margin: 0;
 	padding: 0;
 }
 h1 {
-	font-family: 'Century Gothic', 'Verdana', 'Arial',  serif;
+	font-family: 'Exo', 'Source Sans Pro', sans-serif;
 	font-size: 40px;
 	margin-top: 30px;
 	padding-left: 20px;
 	color: #5BD680;
 }
 h2 {
-	font-family: 'Century Gothic', 'Verdana', 'Arial',  serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 30px;
 	margin-top: 0px;
+	margin-bottom: 0px;
 	color: #5BD680;
 }
 p {
@@ -28,11 +29,6 @@ a {
 }
 a:hover {
 	color: #5bd680;
-}
-img {
-	text-align: center; 
-	max-width: 100%;
-
 }
 section {
 	width: 29%;
@@ -45,7 +41,20 @@ footer {
 	padding: 20px 0;
 	padding-right: 20px;
 	font-size: larger;
-	text-align: right;
+	display: inline-block;
+	position: relative;
+	float: right
+}
+#linkedinfoot {
+	float: left;
+	padding-right: 20px;
+}
+#instagramfoot {
+	float: left;
+	padding-right: 20px;
+}
+#text {
+	float: right;
 }
 /* Navigation Main styles */
 nav {
@@ -56,6 +65,7 @@ nav ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	z-index: 9998;
 }
 nav ul li {
 	display: inline-block;
@@ -98,12 +108,12 @@ button {
 }
 /* slider styles*/
 #doc {
-	marging: 40px 0px; 
+	margin: 0 0; 
 	padding-top: 10px;
-	background: #ffffff;	
+	background: #ffffff;
 }
 #content {
-	margin: 0 auto; 
+	margin: auto auto; 
     max-width: 600px; 
     margin-top: 10px; 
 }
@@ -129,7 +139,7 @@ h1 {
 	width: 100%;
 }
 h2 {
-	font-size: smaller;
+	font-size: 20px;
 	margin-top: 10px;
 	text-align: center;
 	width: 100%;
@@ -141,13 +151,25 @@ section {
 	padding: 0; 
 	}
 img {
-	width: 100%;	
+	max-width: 100%;
+	max-height: 100%;
 	}
 footer {
 	font-size: 15px; 
-	width: 100%;
+	width: 90%;
 	margin: 0; 
 	padding: 0;
+}
+footer a {
+	width: 100%;
+}
+#linkedinfoot {
+	width: 10%;
+	height: 10%;
+	}
+#instagramfoot {
+	width: 10%;
+	height: 10%;
 }
 nav ul li {
 	text-align: center;
@@ -160,5 +182,10 @@ nav ul li:hover > ul {
 	background-color: seagreen;
 	width: 100%;
 }
+	#doc {
+		position:inherit;
+		max-width: 100%;
+		max-height: 100%;
+	}
 /* end media query */
 }

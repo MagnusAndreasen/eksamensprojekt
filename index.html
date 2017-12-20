@@ -6,15 +6,7 @@
 <meta name="viewport" content="width=device-width; initial-scale=1; user-scalable=0;">
 <link href="styles.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="blueberry.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-<script src="jquery.blueberry.js"></script>
-<script> 
-$(window).load(function() {
-	$('.blueberry').blueberry();
-});
-</script>
 </head>
-
 <body>
 <header>
   <h1>Multimediadesign by Magnus Andreasen</h1>
@@ -55,39 +47,38 @@ $(window).load(function() {
     </div>
   </div>
 </div>
-<section> <img src="billeder/icon_1-03.png" width="120" height="100" alt=""/>
-  <h2>What I Do</h2>
+<section>
+  <h2>What I Do!</h2>
   <p><br>
     Hello, my name is Magnus.<br>
-	I am currently studying for a degree in Multimediadesign at Copenhagen Business Academy.<br>
-    <br>
+	I am currently studying for a degree in Multimediadesign at Copenhagen Business Academy.<br><br>
     As a Multimedia designer, I can do work such as: Frond End Design and Development, Graphic Design, Project Management and much more.<br><br>
-    Click around my website and have a look at my skills and knowledge, my portfolio or my contact information.<br>
-	<br><a href="about.html">Click here to read more about me.</a>
+    Click around my website and have a look at my skills and knowledge, my portfolio or my contact information.<br><br> 
+	<a href="about.html">Click here to read more about me.</a>
   </p>
 </section>
-<section> <img src="billeder/Sweetbot+hotbot-03.png" width="120" height="100" alt=""/>
-  <h2>What I Have Done</h2>
+<section>
+  <h2>What I Have Done!</h2>
   <p><br>
-    My current portfolio contains the work I have done while studying. I have done 4 projects, with a different theme each time.<br>
-    <br>
-    The projects contain all essential skills that we learn through our Multimedia programme.<br>
-    <br>
+    My current portfolio contains the work I have done while studying. I have done 4 projects, with a different theme each time.<br><br>
+    The projects contain all essential skills that we learn through out our Multimedia programme.<br><br>
     The portfolio content is arranged chronologically. That way it is easy to see the development I have been through so far.<br><br>
-	<a href="about.html">Click here to see the portfolio.</a>
+	<a href="portfolio.html">Click here to see the portfolio.</a>
   </p>
 </section>
-<section> <img src="billeder/gave.png" width="100" height="100" alt=""/>
-  <h2>Get In Touch</h2>
+<section>
+  <h2>Get In Touch!</h2>
   <p><br>
     If you are interested in working with me or hear more about what I do, then you are more than welcome to contact me.<br><br>
     It is easy to get in touch with me. You can shoot me an email or contact me through social medias such as LinkedIn or Instagram.<br><br> 
 	You can also simply fill in the contact form on my contact page and I will get back to you as soon as possible.<br><br>
-	<a href="about.html" >Click here to see my contact info.</a>
+	<a href="contact.html" >Click here to see my contact information.</a>
   </p>
 </section>
 <footer>
-  <p>Copyright &copy; 2017</p>
+	<a id="linkedinfoot" href="https://www.linkedin.com/in/magnus-andreasen-95b25aa7/" ><img src="billeder/linkedin.png" width="30" height="30" alt=""/></a>
+	<a id="instagramfoot" href="https://www.instagram.com/andreasen_magnus/" ><img src="billeder/instagram.png" width="30" height="30" alt=""/></a>
+	<a id="text">Copyright &copy; 2017</a>
 </footer>
 <script>
 	function myFunction () {
@@ -95,6 +86,23 @@ $(window).load(function() {
 		
 		element.classList.toggle("myStyle");
 	}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="jquery.blueberry.js"></script>
+<script> 
+$(window).load(function() {
+	$('.blueberry').blueberry();
+});
+</script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+jQuery.noConflict();
+jQuery(document).ready(function($){
+ $('img').each(function(){ 
+ $(this).removeAttr('width')
+ $(this).removeAttr('height');
+ });
+});
 </script>
 </body>
 </html>
