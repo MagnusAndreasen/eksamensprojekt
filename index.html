@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Eksamensprojekt</title>
+<meta name="viewport" content="width=device-width; initial-scale=1; user-scalable=0;">
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <h1>Multimediadesign by Magnus Andreasen</h1>
+</header>
+<!--- start main navigation -->
+<button onclick="myFunction()">Toggle Menu</button>
+<nav id="myNav">
+  <ul>
+    <li><a href="#" target="_self">Home</a></li>
+    <li><a href="#" target="_self">About</a> 
+      <!-- nested list as sub menu -->
+      <ul>
+        <li><a href="#" target="_self">About Me</a></li>
+        <li><a href="#" target="_self">What I Do</a></li>
+      </ul>
+    </li>
+    <li><a href="#" target="_self">Portfolio</a>
+	 <!-- nested list as sub menu -->
+      <ul>
+        <li><a href="#" target="_self">Drøm din portfolio</a></li>
+        <li><a href="#" target="_self">Byg din portfolio</a></li>
+		<li><a href="#" target="_self">Byg en app</a></li>
+        <li><a href="#" target="_self">Byg Sweetbot website</a></li>
+      </ul>
+    </li>
+    <li><a href="#" target="_self">Contact</a></li>
+  </ul>
+</nav>
+<!--- main content here -->
+<footer>
+  <p>Copyright &copy; 2017 Multimediadesign by Magnus Andreasen</p>
+</footer>
+<script>
+	function myFunction () {
+		var element = document.getElementById("myNav");
+		
+		element.classList.toggle("myStyle");
+	}
+</script>
+</body>
+</html>
