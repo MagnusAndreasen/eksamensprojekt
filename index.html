@@ -5,6 +5,14 @@
 <title>Eksamensprojekt</title>
 <meta name="viewport" content="width=device-width; initial-scale=1; user-scalable=0;">
 <link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="blueberry.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="jquery.blueberry.js"></script>
+<script> 
+$(window).load(function() {
+	$('.blueberry').blueberry();
+});
+</script>
 </head>
 
 <body>
@@ -12,7 +20,7 @@
   <h1>Multimediadesign by Magnus Andreasen</h1>
 </header>
 <!--- start main navigation -->
-<button onclick="myFunction()">Toggle Menu</button>
+<button onclick="myFunction()">Show Menu</button>
 <nav id="myNav">
   <ul>
     <li><a href="#" target="_self">Home</a></li>
@@ -26,18 +34,60 @@
     <li><a href="#" target="_self">Portfolio</a>
 	 <!-- nested list as sub menu -->
       <ul>
-        <li><a href="#" target="_self">Drøm din portfolio</a></li>
-        <li><a href="#" target="_self">Byg din portfolio</a></li>
-		<li><a href="#" target="_self">Byg en app</a></li>
-        <li><a href="#" target="_self">Byg Sweetbot website</a></li>
+        <li><a href="#" target="_self">Dream your portfolio</a></li>
+        <li><a href="#" target="_self">Build your portfolio</a></li>
+		<li><a href="#" target="_self">Build an app</a></li>
+        <li><a href="#" target="_self">Build the Sweetbot website</a></li>
       </ul>
     </li>
     <li><a href="#" target="_self">Contact</a></li>
   </ul>
 </nav>
 <!--- main content here -->
+<div id="doc">
+  <div id="content">
+    <div class="blueberry">
+      <ul class="slides">
+        <li><img src="billeder/Responsive_picture.png" width="600" height="400" alt=""/></li>
+        <li><img src="billeder/Ansatte_Sweetbot.jpg" width="600" height="400" alt=""/></li>
+        <li><img src="billeder/Sweetbot_reception.png" width="600" height="400" alt=""/></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<section> <img src="billeder/icon_1-03.png" width="120" height="100" alt=""/>
+  <h2>What I Do</h2>
+  <p><br>
+    Hello, my name is Magnus.<br>
+	I am currently studying for a degree in Multimediadesign at Copenhagen Business Academy.<br>
+    <br>
+    As a Multimedia designer, I can do work such as: Frond End Design and Development, Graphic Design, Project Management and much more.<br><br>
+    Click around my website and have a look at my skills and knowledge, my portfolio or my contact information.<br>
+	<br><a href="about.html">Click here to read more about me.</a>
+  </p>
+</section>
+<section> <img src="billeder/Sweetbot+hotbot-03.png" width="120" height="100" alt=""/>
+  <h2>What I Have Done</h2>
+  <p><br>
+    My current portfolio contains the work I have done while studying. I have done 4 projects, with a different theme each time.<br>
+    <br>
+    The projects contain all essential skills that we learn through our Multimedia programme.<br>
+    <br>
+    The portfolio content is arranged chronologically. That way it is easy to see the development I have been through so far.<br><br>
+	<a href="about.html">Click here to see the portfolio.</a>
+  </p>
+</section>
+<section> <img src="billeder/gave.png" width="100" height="100" alt=""/>
+  <h2>Get In Touch</h2>
+  <p><br>
+    If you are interested in working with me or hear more about what I do, then you are more than welcome to contact me.<br><br>
+    It is easy to get in touch with me. You can shoot me an email or contact me through social medias such as LinkedIn or Instagram.<br><br> 
+	You can also simply fill in the contact form on my contact page and I will get back to you as soon as possible.<br><br>
+	<a href="about.html" >Click here to see my contact info.</a>
+  </p>
+</section>
 <footer>
-  <p>Copyright &copy; 2017 Multimediadesign by Magnus Andreasen</p>
+  <p>Copyright &copy; 2017</p>
 </footer>
 <script>
 	function myFunction () {

@@ -3,23 +3,53 @@
 /* Desktop Styles */
 body {
 	background: #212121;
-	font-family: 'Open Sans', sans-serif;
-	color: white;
+	font-family: 'Century Gothic', 'Verdana', 'Arial', 'Open Sans', sans-serif;
 	margin: 0;
 	padding: 0;
 }
 h1 {
-	font-family: 'Bree Serif', serif;
+	font-family: 'Century Gothic', 'Verdana', 'Arial',  serif;
 	font-size: 40px;
 	margin-top: 30px;
+	padding-left: 20px;
+	color: #5BD680;
+}
+h2 {
+	font-family: 'Century Gothic', 'Verdana', 'Arial',  serif;
+	font-size: 30px;
+	margin-top: 0px;
+	color: #5BD680;
+}
+p {
+	color: white;
+}
+a { 
+	text-decoration : none; color : #ffffff;
+}
+a:hover {
+	color: #5bd680;
+}
+img {
+	text-align: center; 
+	max-width: 100%;
+
+}
+section {
+	width: 29%;
+	float: left; 
+	margin: 2% 2%;
+	text-align: left;
+	margin-bottom: 5%;
 }
 footer {
 	padding: 20px 0;
+	padding-right: 20px;
 	font-size: larger;
+	text-align: right;
 }
 /* Navigation Main styles */
 nav {
-	background-color: #DB3232;
+	background-color: #5BD680;
 }
 /* Removing margin, padding and listy styles from nav ul */
 nav ul {
@@ -32,23 +62,29 @@ nav ul li {
 }
 nav a {
 	display: block;
-	color: white;
+	color: #212121;
 	font-size: 17px;
 	text-decoration: none;
 	padding: 14px 20px;
 }
 nav a:hover {
 	background-color: #212121;
+	color: #5bd680;
 }
 /* drowdown menu styles */
 nav ul ul {
 	display: none;
 	position: absolute;
 }
+button {
+	background-color: #5bd680;
+	font-family: 'Century Gothic', 'Verdana', 'Arial',  serif;
+	border: none
+}
 /* display dropdowns on hover */
 nav ul li:hover > ul {
 	display: inherit;
-	background-color: #DB3232;
+	background-color: #5BD680;
 	width: 150px;
 }
 nav ul ul li {
@@ -60,22 +96,58 @@ nav ul ul li {
 button {
 	display: none;
 }
+/* slider styles*/
+#doc {
+	marging: 40px 0px; 
+	padding-top: 10px;
+	background: #ffffff;	
+}
+#content {
+	margin: 0 auto; 
+    max-width: 600px; 
+    margin-top: 10px; 
+}
+.blueberry {
+	max-width: 600px; 
+	margin-top: 110px;
+
+}
 
 /* Responsive Styles with CSS media query */
 @media all and (max-width : 768px) {
 button {
 	display: block;
+	
 }
 nav {
 	display: none;
 	}
 h1 {
+	font-size: 20px;
+	margin-top: 10px;
+	text-align: left;
+	width: 100%;
+}
+h2 {
 	font-size: smaller;
 	margin-top: 10px;
 	text-align: center;
+	width: 100%;
 }
+section {
+	float: left; 
+	width: 100%;
+	margin: 0; 
+	padding: 0; 
+	}
+img {
+	width: 100%;	
+	}
 footer {
-	display: none;
+	font-size: 15px; 
+	width: 100%;
+	margin: 0; 
+	padding: 0;
 }
 nav ul li {
 	text-align: center;
@@ -85,7 +157,7 @@ nav ul li {
 /* responsive dropdown styles */
 nav ul li:hover > ul {
 	position: static;
-	background-color: cadetblue;
+	background-color: seagreen;
 	width: 100%;
 }
 /* end media query */
