@@ -30,12 +30,18 @@ a {
 a:hover {
 	color: #5bd680;
 }
+.green {
+	color: #5bd680;
+}
 section {
 	width: 29%;
 	float: left; 
 	margin: 2% 2%;
 	text-align: left;
 	margin-bottom: 5%;
+}
+#about {
+	width: 100%;
 }
 footer {
 	padding: 20px 0;

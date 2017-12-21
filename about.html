@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About</title>
+<meta name="viewport" content="width=device-width; initial-scale=1; user-scalable=0;">
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="blueberry.css"/>
+</head>
+<body>
+<header>
+  <h1>Multimediadesign by Magnus Andreasen</h1>
+</header>
+<!--- start main navigation -->
+<button onclick="myFunction()">Show Menu</button>
+<nav id="myNav">
+  <ul>
+    <li><a href="index.html" target="_self">Home</a></li>
+    <li><a href="#" target="_self">About</a></li>
+    <li><a href="#" target="_self">Portfolio</a>
+	 <!-- nested list as sub menu -->
+      <ul>
+        <li><a href="#" target="_self">Dream your portfolio</a></li>
+        <li><a href="#" target="_self">Build your portfolio</a></li>
+		<li><a href="#" target="_self">Build an app</a></li>
+        <li><a href="#" target="_self">Build the Sweetbot website</a></li>
+      </ul>
+    </li>
+    <li><a href="#" target="_self">Contact</a></li>
+  </ul>
+</nav>
+<!--- main content here -->
+<section id="about"><br><br><h2>Short about Me</h2>
+  <p>
+    Hello, my name is Magnus.<br><br>
+	I am currently studying for a degree in Multimediadesign at Copenhagen Business Academy.<br><br>
+    As a Multimedia designer, I can do work such as: Frond End Development, Graphic Design, Project Management and much more.<br><br>
+    I am very passionate about web design and I always strive to make the best product possible.<br><br>
+	If you want to see some of the things I have been working on, then go to the prototype page and check it out. It is set up chronologically,<br>so that it is
+	easy to see my progression, as I learn new things all the time.<br><br>
+	  
+	To see the portfolio simply press the link at the bottom of this page or use the menu above.
+  </p>
+  <br><h2>What I Do!</h2>
+  <p>
+    Below you can see some of the <a class="green">skills</a> and <a class="green">knowledge</a> that I have learned so far.<br><br>
+	Web Design - HTML, CSS, javascript, jQuery<br>
+	Graphic Design - Photoshop, Illustrator<br>
+	Project Managament - WBS, PBS, Gantt<br>
+	Development Methods - Prototyping with Adobe Experience Design<br>
+	App Design<br>
+	Usability and testing<br>
+	Copyright Law<br><br><br>
+	
+	I am experienced in using the following <a class="green">software</a>:<br><br>
+	Dreamweaver, Illustrator, Photoshop, Experience Design, Acrobat,<br>Axure RP, Microsoft Office, GitHub<br><br><br><br>
+	
+	<a class="green" href="portfolio.html">Click here to see my portfolio.</a>
+  </p>
+</section>
+<footer>
+	<a id="linkedinfoot" href="https://www.linkedin.com/in/magnus-andreasen-95b25aa7/" ><img src="billeder/linkedin.png" width="30" height="30" alt=""/></a>
+	<a id="instagramfoot" href="https://www.instagram.com/andreasen_magnus/" ><img src="billeder/instagram.png" width="30" height="30" alt=""/></a>
+	<a id="text">Copyright &copy; 2017</a>
+</footer>
+<script>
+	function myFunction () {
+		var element = document.getElementById("myNav");
+		
+		element.classList.toggle("myStyle");
+	}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="jquery.blueberry.js"></script>
+<script> 
+$(window).load(function() {
+	$('.blueberry').blueberry();
+});
+</script>
+
+</body>
+</html>
