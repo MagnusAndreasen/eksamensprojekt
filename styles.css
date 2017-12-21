@@ -43,6 +43,13 @@ section {
 #about {
 	width: 100%;
 }
+.portfolio {
+	width: 20%;
+}
+#contact {
+	width: 100%;
+	margin-bottom: 2%;
+}
 footer {
 	padding: 20px 0;
 	padding-right: 20px;
@@ -128,6 +135,66 @@ button {
 	margin-top: 110px;
 
 }
+form {
+	width: 460px;
+}
+/* Style all input boxes */
+input, textarea {
+	width: 460px;
+	height: 27px;
+	background: #5bd680;
+	border: 1px solid #212121;
+	padding: 10px;
+	margin-top: 0px;
+	margin-left: 22px;
+	font-size: 0.9em;
+	color: #000000;
+	font-family: 'Century Gothic', 'Exo', 'Source Sans Pro', sans-serif;
+	font-style: italic;
+	/* Rounded borders for Mozilla */
+	-moz-border-radius-top-left: 10px;
+	-moz-border-radius-top-right: 10px;
+	-moz-border-radius-bottom-right: 10px;
+	-moz-border-radius-bottom-left: 10px;
+	/* Rounded borders for Webkit */
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+}
+textarea {
+	width: 460px;
+	height: 140px;
+}
+/* Styling the input button */
+input[type=submit] {
+	width: 200px;
+	background: #5bd680;
+	cursor: pointer;
+	padding: 5px;
+	font-weight: bolder;
+}
+/* Styling placeholder text cross-browser */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+ font-size: 12px;
+ color:#000;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ font-size: 12px;
+ color: #000;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+ font-size: 12px;
+ color: #000;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ font-size: 12px;
+ color: #000;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+ font-size: 12px;
+ color: #000;
+}
 
 /* Responsive Styles with CSS media query */
 @media all and (max-width : 768px) {
@@ -156,6 +223,21 @@ section {
 	margin: 0; 
 	padding: 0; 
 	}
+.portfolio {
+	width: 90%;
+}
+form {
+	width: 90%;
+	margin-left: 5px;
+}
+input, textarea {
+	width: 90%;
+	margin-left: 5px;
+}
+textarea {
+	width: 90%;
+	margin-left: 5px;
+}
 img {
 	max-width: 100%;
 	max-height: 100%;
@@ -188,10 +270,10 @@ nav ul li:hover > ul {
 	background-color: seagreen;
 	width: 100%;
 }
-	#doc {
-		position:inherit;
-		max-width: 100%;
-		max-height: 100%;
-	}
+#doc {
+	position:inherit;
+	max-width: 100%;
+	max-height: 100%;
+}
 /* end media query */
 }
